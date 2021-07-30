@@ -5,6 +5,9 @@
   background-size: cover;
 }
 
+.search-bar {
+  width: 40rem;
+}
 .sidebar-main-catagory:hover {
   background-color: #8d0205;
 }
