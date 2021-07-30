@@ -5,6 +5,11 @@
   background-size: cover;
 }
 
+.search-div {
+  margin-right: 300px;
+  margin-left: -35px;
+}
+
 .search-bar {
   width: 40rem;
 }
