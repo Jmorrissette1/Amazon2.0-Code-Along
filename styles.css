@@ -1,9 +1,13 @@
 .main-section-banner {
+  height: 300px;
   background-image: url("Banner.png");
   background-position: center;
   background-size: cover;
 }
 
+.sidebar-main-catagory:hover {
+  background-color: #8d0205;
+}
 .search-icon {
   background-color: #8d0205;
 }
