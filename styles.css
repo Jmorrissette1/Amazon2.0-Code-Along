@@ -1,5 +1,8 @@
 .main-section-banner {
-  background-image: url("https://i.ibb.co/JnmTD12/banner.jpg");
+  background-image: url("Banner.png");
   background-position: center;
   background-size: cover;
+}
+
+.button {
 }
