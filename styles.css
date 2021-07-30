@@ -12,6 +12,10 @@
 
 .search-bar {
   width: 40rem;
+  background-color: #393939;
+}
+.catagories {
+  background-color: #393939;
 }
 .sidebar-main-catagory:hover {
   background-color: #8d0205;
