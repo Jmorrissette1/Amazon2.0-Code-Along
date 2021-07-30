@@ -4,6 +4,41 @@
   background-size: cover;
 }
 
+.search-icon {
+  background-color: #8d0205;
+}
+.cart-icon {
+  background-color: #8d0205;
+}
 .main-section {
   background-color: #393939;
+}
+.main-sidebar {
+  background-color: #1b1b1b;
+}
+.sidebar-selected {
+  background-color: #8d0205;
+}
+.desktop-i {
+  background-color: #555555;
+}
+.cat-icon {
+  background-color: #555555;
+}
+
+.product-name {
+  text-transform: uppercase;
+}
+.product-make {
+  color: #8d0205;
+}
+
+.product-price {
+  color: #8d0205;
+}
+
+.main-product {
+  background-color: #555555;
+  text-align: center;
+  padding-bottom: 20px;
 }
