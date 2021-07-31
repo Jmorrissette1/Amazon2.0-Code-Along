@@ -14,6 +14,13 @@
         integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/" crossorigin="anonymous">
         </script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
     <title>JM Devs Swag Shop</title>
 </head>
 
@@ -55,13 +62,18 @@
                             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                 </div>
-                <div class="cart-icon h-10 w-10  rounded-xl  flex justify-center items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                        stroke="black">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-
+                <div class="cart-icon h-10 w-10  relative rounded-xl  flex justify-center items-center">
+                    <a href="cart.html">
+                        <div
+                            class="cart-item-number absolute -top-1 -right-1 h-4 w-4 bg-black rounded-full text-white flex justify-center items-center text-sm">
+                            1
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="bell-icon  ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
@@ -78,7 +90,7 @@
             </div>
         </div>
         <!-- Main -->
-        <div class="main h-screen flex">
+        <div class="main h-full flex">
             <div class="main-sidebar w-1/5  border border-gray-700 border-t-2 ">
                 <div class="sidebar-catagories">
                     <div class="sidebar-main-catagory sidebar-selected text-black cursor-pointer flex p-2 font-bold ">
@@ -224,6 +236,7 @@
                             <div class="product-make">JM Devs</div>
                             <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
                             <div class="product-price text-lg font-bold">$15.00</div>
+                            <button>add to cart</button>
                         </div>
                         <div class="main-product ml-10">
                             <div class="product-image w-48 h-42 bg-white">
@@ -233,6 +246,7 @@
                             <div class="product-make ">JM Devs</div>
                             <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
                             <div class="product-price text-lg font-bold">$19.99</div>
+                            <button>add to cart</button>
                         </div>
                         <div class="main-product ml-10 ">
                             <div class="product-image w-48 h-42 bg-white">
@@ -242,6 +256,7 @@
                             <div class="product-make">JM Devs</div>
                             <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
                             <div class="product-price text-lg font-bold">$29.00</div>
+                            <button>add to cart</button>
                         </div>
                         <div class="main-product ml-10">
                             <div class="product-image w-48 h-42 bg-white">
@@ -252,6 +267,7 @@
                             <div class="product-make">JM Devs</div>
                             <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
                             <div class="product-price text-lg font-bold">$5.00</div>
+                            <button>add to cart</button>
                         </div>
                         <div class="main-product ml-10">
                             <div class="product-image w-48 h-42 bg-white ">
@@ -261,6 +277,7 @@
                             <div class="product-make ">JM Devs</div>
                             <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
                             <div class="product-price text-lg font-bold">$15.00</div>
+                            <button>add to cart</button>
                         </div>
 
                     </div>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js" async
+        integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/" crossorigin="anonymous">
+        </script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js" async
+            integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/" crossorigin="anonymous">
+            </script>
+
+        <title>JM Devs Swag Shop</title>
+    </head>
+
+    <body>
+        <div class="bg-white w-full">
+            <!-- Navigation Bar-->
+            <div class="header h-16 bg-black flex items-center">
+                <div class="logo w-1/5 h-16 ml-10 pt-1 ">
+                    <img class="w-68 h-16 object-contain" src="header-logo.png" alt="jason morrissette web developer">
+                </div>
+                <div class="flex search-div">
+                    <input
+                        class=" search-bar h-9 border border-gray-500 border-opacity-75 rounded-l-xl px-3 text-white ml-6 focus:outline-none"
+                        id="search" type="text" placeholder="Search...">
+                    <div
+                        class="catagories h-9 w-30  border border-gray-500 border-opacity-75 px-3  text-white flex items-center">
+                        catagories
+                        <!-- Chevron Icon-->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="search-icon  h-9 w-10 rounded-r-xl flex justify-center items-center text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- Nav Icons -->
+                <div
+                    class="icons text-white flex ml-auto mr-8 w-48 h-16 flex justify-center items-center justify-around">
+                    <div class="heart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <!-- Shopping Cart Icon-->
+                    <div class="cart-icon h-10 w-10  relative rounded-xl  flex justify-center items-center">
+                        <div
+                            class="cart-item-number absolute -top-1 -right-1 h-4 w-4 bg-black rounded-full text-white flex justify-center items-center">
+                            1
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="black">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+
+                    </div>
+                    <div class="bell-icon  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+
+                    </div>
+                    <div class="custom-icon ">
+                        <svg class="h-12 w-12 rounded-full" width="80" height="80"
+                            data-jdenticon-value="Jason Morrissette"></svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Main -->
+            <div class="main h-screen flex">
+                <div class="main-sidebar w-1/5 h-full border border-gray-700 border-t-2 ">
+                    <div class="sidebar-catagories">
+                        <div
+                            class="sidebar-main-catagory sidebar-selected text-black cursor-pointer flex p-2 font-bold ">
+                            <span class="w-8"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                </svg>
+                            </span>
+                            <span>Catagories</span>
+                        </div>
+                        <div class="sidebar-main-catagory  cursor-pointer text-white mb-2 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Echo and Alexa</span>
+
+                        </div>
+                        <div class="sidebar-main-catagory  cursor-pointer text-white mb-4 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Kindle</span>
+
+                        </div>
+                        <div class="sidebar-main-catagory  cursor-pointer text-white mb-2 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Books</span>
+                        </div>
+                        <div class="sidebar-main-catagory text-white cursor-pointer mb-2 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Electronics</span>
+                        </div>
+                        <div class="sidebar-main-catagory cursor-pointer text-white mb-2 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Home and Garden</span>
+                        </div>
+                        <div class="sidebar-main-catagory cursor-pointer text-white mb-2 p-2 ml-8">
+                            <span class="w-8"></span>
+                            <span>Fashion</span>
+                        </div>
+                        <div class="sidebar-main-catagory cursor-pointer text-white mb-4 p-2 ml-8">
+                            <span class="w-8"><i class="fas fa-percent"></i></span>
+                            <span>Sell Me your stuff!</span>
+                        </div>
+                        <div class="sidebar-main-catagory cursor-pointer text-white mb-2 p-2  ml-8">
+                            <span class="w-8"><i class="far fa-question-circle"></i></span>
+                            <span>Help</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-section flex-1 p-6">
+                    <h1 class="shopping-cart-h2 font-bold text-3xl text-white mb-6">Shopping Cart</h1>
+                    <div class="font-bold table-titles flex">
+                        <h2 class="text-white flex-grow">Product</h2>
+                        <h2 class="text-white w-48">Count</h2>
+                        <h2 class="text-white w-48">Total Cost</h2>
+                        <span class="w-10"></span>
+                    </div>
+                    <div class="cart-item flex items-center border-b">
+                        <div>
+                            <img src="JM Hat.png" class="w-40 h-25 p-4 mt-5 rounded-lg ">
+                        </div>
+                        <div class="cart-item-details flex-grow">
+                            <div class="text-white font-bold"> JM Hat </div>
+                            <div class="product-make font-bold"> JM Devs </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div
+                                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center bg-gray-500 hover:bg-gray-200 mr-2">
+                                <i class="fas fa-chevron-left "></i>
+                            </div>
+                            <h4 class="text-white  ">x1</h4>
+                            <div
+                                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center  bg-gray-500 hover:bg-gray-200 ml-2">
+                                <i class="fas fa-chevron-right cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item-total-cost w-48 font-bold text-white">
+                            15.00
+                        </div>
+                        <div class="item-card-delete w-10 font-bold cursor-pointer">
+                            <i class="fas fa-times cancel-item"></i>
+                        </div>
+                    </div>
+
+                    <div class="cart-item flex items-center border-b">
+                        <div>
+                            <img src="JM T-Shirt.png" class="w-40 h-25 p-4 mt-5 rounded-lg ">
+                        </div>
+                        <div class="cart-item-details flex-grow">
+                            <div class="text-white font-bold"> JM Fitted-T </div>
+                            <div class="product-make font-bold"> JM Devs </div>
+                        </div>
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div
+                                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center bg-gray-500 hover:bg-gray-200 mr-2">
+                                <i class="fas fa-chevron-left "></i>
+                            </div>
+                            <h4 class="text-white ">x1</h4>
+                            <div
+                                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center  bg-gray-500 hover:bg-gray-200 ml-2">
+                                <i class="fas fa-chevron-right cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="item-total-cost w-48 font-bold text-white">
+                            29.00
+                        </div>
+                        <div class="item-card-delete w-10 font-bold cursor-pointer">
+                            <i class="fas fa-times cancel-item"></i>
+                        </div>
+                    </div>
+
+                    <div class="complete-order flex justify-end items-cente mt-10">
+                        <div class="total-cost">
+                            <h2 class="text-white mr-10">Total Cost</h2>
+                            <div class="total-cost-number text-white text-3xl font-bold">34.00</div>
+                        </div>
+                        <div
+                            class="complete-order-button w-56 flex items-center justify-center bg-black cursor-pointer text-white">
+                            Complete Order
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

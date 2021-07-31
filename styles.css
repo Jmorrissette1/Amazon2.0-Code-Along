@@ -56,3 +56,15 @@
   text-align: center;
   padding-bottom: 20px;
 }
+
+.cancel-item {
+  color: #8d0205;
+}
+
+.cancel-item:hover {
+  color: #ff0000;
+}
+
+.complete-order-button:hover {
+  background-color: #393939;
+}
