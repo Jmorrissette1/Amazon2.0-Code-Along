@@ -1,3 +1,7 @@
+:root {
+  font-family: "Barlow", sans-serif;
+}
+
 .main-section-banner {
   height: 300px;
   background-image: url("Banner.png");
@@ -85,12 +89,31 @@
 }
 
 .chevron-left:hover {
+  font-size: 20px;
   color: #fff;
 }
 .chevron-right:hover {
+  font-size: 20px;
   color: #fff;
 }
 
 .qty {
+  font-size: 20px;
   padding-right: 12px;
+}
+
+.cart-item {
+  background-color: #555555;
+}
+
+.cart-product-name {
+  font-size: 20px;
+}
+
+.cart-product-make {
+  color: #1b1b1b;
+}
+
+.item-total-cost {
+  font-size: 20px;
 }
