@@ -31,6 +31,7 @@
   background-color: #8d0205;
 }
 .main-section {
+  height: 100vh;
   background-color: #393939;
 }
 .main-sidebar {
@@ -59,6 +60,7 @@
   background-color: #d9d9d9;
   text-align: center;
   padding-bottom: 20px;
+  
 }
 
 .cancel-item {
@@ -75,7 +77,9 @@
 }
 
 .add-to-cart-btn {
+  margin-left: 1.8em;
   margin-top: 20px;
+  padding-top: 11px;
   width: 135px;
   height: 50px;
   text-transform: uppercase;
