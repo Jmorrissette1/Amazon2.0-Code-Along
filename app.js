@@ -21,8 +21,7 @@ function getItems(){
   
 }
 function addToCart(item){
-    console.log("Add TO Cart Click");
-    console.log(item);
+  
     
 }
 
