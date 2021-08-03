@@ -18,13 +18,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
 
+
+   
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <!--Import App Script-->
+     <script src="firebase.js"></script>
+     <script src="app.js"></script>
 
     <title>JM Devs Swag Shop</title>
 </head>
@@ -69,6 +74,7 @@
                 </div>
                 <div class="cart-icon h-10 w-10  relative rounded-xl  flex justify-center items-center">
                     <a href="cart.html">
+                        <!--Cart Item Numer-->
                         <div
                             class="cart-item-number absolute -top-1 -right-1 h-4 w-4 bg-black rounded-full text-white flex justify-center items-center text-sm">
                             1
@@ -234,57 +240,7 @@
                     <h1 class="text-2xl font-bold text-white mt-5 mb-10">Hot Deals 🔥 </h1>
                     <div class=" main-section-products flex">
                         <div class="main-product">
-                            <div class="product-image w-48 h-42 bg-white">
-                                <img class="w-full h-full object-contain p-4" src="JM Pins.png" alt="Pins">
-                            </div>
-                            <div class="product-name text-black font-bold mt-2 text-sm">JM Devs Pins 3CT</div>
-                            <div class="product-make">JMDevs</div>
-                            <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
-                            <div class="product-price text-lg font-bold">$15.00</div>
-                            <button class="add-to-cart-btn">add to cart</button>
-                        </div>
-                        <div class="main-product ml-10">
-                            <div class="product-image w-48 h-42 bg-white">
-                                <img class="w-full h-full object-contain p-4" src="JM Hat.png" alt="Jam Devs Hat">
-                            </div>
-                            <div class="product-name text-black font-bold mt-2 text-sm">JM Devs Cap</div>
-                            <div class="product-make ">JMDevs</div>
-                            <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
-                            <div class="product-price text-lg font-bold">$19.99</div>
-                            <button class="add-to-cart-btn">add to cart</button>
-                        </div>
-                        <div class="main-product ml-10 ">
-                            <div class="product-image w-48 h-42 bg-white">
-                                <img class="w-full h-full object-contain p-4" src="JM T-Shirt.png" alt="JM Devs Hat">
-                            </div>
-                            <div class="product-name text-black font-bold mt-2 text-sm">Jm Devs Fitted T</div>
-                            <div class="product-make">JMDevs</div>
-                            <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
-                            <div class="product-price text-lg font-bold">$29.00</div>
-                            <button class="add-to-cart-btn">add to cart</button>
-                        </div>
-                        <div class="main-product ml-10">
-                            <div class="product-image w-48 h-42 bg-white">
-                                <img class="w-full h-full object-contain p-4" src="JM Stickers.png"
-                                    alt="JM Devs Stickers">
-                            </div>
-                            <div class="product-name text-black font-bold mt-2 text-sm">JM Devs Stickers</div>
-                            <div class="product-make">JMDevs</div>
-                            <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
-                            <div class="product-price text-lg font-bold">$5.00</div>
-                            <button class="add-to-cart-btn">add to cart</button>
-                        </div>
-                        <div class="main-product ml-10">
-                            <div class="product-image w-48 h-42 bg-white ">
-                                <img class="w-full h-full object-contain p-4" src="JM Mug.png" alt="nintendo switch">
-                            </div>
-                            <div class="product-name text-black font-bold mt-2 text-sm">JM Devs Mug</div>
-                            <div class="product-make ">JMDevs</div>
-                            <div class="product-rating my-1 text-black">⭐⭐⭐⭐⭐ 5</div>
-                            <div class="product-price text-lg font-bold">$15.00</div>
-                            <button class="add-to-cart-btn">add to cart</button>
-                        </div>
-
+                       
                     </div>
 
                 </div>
