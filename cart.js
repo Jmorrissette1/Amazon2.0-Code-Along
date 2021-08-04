@@ -8,8 +8,17 @@ function getCartItems(){
             })
         })
         generateCartItems(cartItems);
+        getTotalCost(cartItems);
     })
     
+}
+
+function getTotalCost(items){
+    let totalCost = 0;
+    items.forEach((item) =>{
+        totalCost += (item.price * item.qauntity);
+    })
+    document.querySelector(".total-cost-number").innerText = totalCost;
 }
 
 function decreaseCount(itemId){
