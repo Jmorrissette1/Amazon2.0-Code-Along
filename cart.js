@@ -12,6 +12,33 @@ function getCartItems(){
     
 }
 
+function decreaseCount(itemId){
+    let cartItem = db.collection("cart-items").doc(itemId);
+    cartItem.get().then(function(doc){
+        if (doc.exists){
+            if(doc.data().qauntity > 1){
+                cartItem.update({
+                    qauntity: doc.data().qauntity -1
+                })
+            }
+        }
+    })
+}
+
+function increaseCount(itemId){
+    let cartItem = db.collection("cart-items").doc(itemId);
+    cartItem.get().then(function(doc){
+        if (doc.exists){
+            if(doc.data().qauntity <= 1){
+                cartItem.update({
+                    qauntity: doc.data().qauntity +1
+                })
+            }
+        }
+    })
+}
+
+
 
 function generateCartItems(cartItems){
     let itemsHTML = "";
@@ -27,12 +54,12 @@ function generateCartItems(cartItems){
         </div>
         <div class="cart-item-counter w-48 flex items-center">
             <div
-                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center  mr-2">
+                 data-id="${item.id}" class="chevron-left cart-item-decrease  cursor-pointer h-6 w-6 flex justfiy-center items-center  mr-2">
                 <i class="fas fa-chevron-left "></i>
             </div>
             <h4 class="text-white qty ">${item.qauntity}</h4>
             <div
-                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center   ml-2">
+               data-id="${item.id}" class="chevron-right cart-item-increase cursor-pointer h-6 w-6 flex justfiy-center items-center   ml-2">
                 <i class="fas fa-chevron-right cursor-pointer"></i>
             </div>
         </div>
@@ -46,8 +73,27 @@ function generateCartItems(cartItems){
    
     })
     document.querySelector(".cart-item").innerHTML = itemsHTML;
-   
+    createEventListeners();
 }
 
+function createEventListeners(){
+    let decreaseButton = document.querySelectorAll(".cart-item-decrease");
+    let increaseButton = document.querySelectorAll(".cart-item-increase");
+
+    decreaseButton.forEach((button) => { 
+      button.addEventListener("click", function(){
+        decreaseCount(button.dataset.id);
+      })
+    
+    })
+
+    increaseButton.forEach((button) => { 
+        button.addEventListener("click", function(){
+          increaseCount(button.dataset.id);
+        })
+      
+      })
+
+}
 
 getCartItems();
