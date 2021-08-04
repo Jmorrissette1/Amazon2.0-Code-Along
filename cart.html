@@ -14,9 +14,18 @@
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.0/dist/jdenticon.min.js" async
         integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/" crossorigin="anonymous">
         </script>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+
+   
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
           <script src="firebase.js"></script>
-          <script src="app.js"></script>
+          
           <script src="header.js"></script>
+          <script src="cart.js"></script>
     <title>Cart</title>
 </head>
 
@@ -167,88 +176,14 @@
                         <h2 class="text-white w-48">Total Cost</h2>
                         <span class="w-10"></span>
                     </div>
-                      <!-- Item 1-->
-                    <div class="cart-item flex items-center border-b">
-                        <div>
-                            <img src="JM Hat.png" class="w-40 h-25 p-4 mt-5 rounded-lg ">
-                        </div>
-                        <div class="cart-item-details flex-grow">
-                            <div class="text-white font-bold cart-product-name"> JM Hat </div>
-                            <div class="cart-product-make font-bold"> JMDevs </div>
-                        </div>
-                        <div class="cart-item-counter w-48 flex items-center">
-                            <div
-                                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center  mr-2">
-                                <i class="fas fa-chevron-left "></i>
-                            </div>
-                            <h4 class="text-white qty ">x1</h4>
-                            <div
-                                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center  ml-2">
-                                <i class="fas fa-chevron-right cursor-pointer"></i>
-                            </div>
-                        </div>
-                        <div class="item-total-cost w-48 font-bold text-white">
-                            19.99
-                        </div>
-                        <div class="item-card-delete w-10 font-bold cursor-pointer">
-                            <i class="fas fa-times cancel-item"></i>
-                        </div>
+                    
+                    <div class="cart-item  items-center border-b">
+                     <!-- Cart Items -->
                     </div>
-                    <!-- Item 2-->
-                    <div class="cart-item flex items-center border-b">
-                        <div>
-                            <img src="JM T-Shirt.png" class="w-40 h-25 p-4 mt-5 rounded-lg ">
-                        </div>
-                        <div class="cart-item-details flex-grow">
-                            <div class="text-white font-bold cart-product-name"> JM Fitted-T </div>
-                            <div class="cart-product-make font-bold"> JMDevs </div>
-                        </div>
-                        <div class="cart-item-counter w-48 flex items-center">
-                            <div
-                                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center  mr-2">
-                                <i class="fas fa-chevron-left "></i>
-                            </div>
-                            <h4 class="text-white qty ">x1</h4>
-                            <div
-                                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center   ml-2">
-                                <i class="fas fa-chevron-right cursor-pointer"></i>
-                            </div>
-                        </div>
-                        <div class="item-total-cost w-48 font-bold text-white">
-                            29.00
-                        </div>
-                        <div class="item-card-delete w-10 font-bold cursor-pointer">
-                            <i class="fas fa-times cancel-item"></i>
-                        </div>
-                    </div>
+                  
+              
 
-                      <!-- Item 3-->
-                      <div class="cart-item flex items-center border-b">
-                        <div>
-                            <img src="JM Mug.png" class="w-40 h-25 p-4 mt-5 rounded-lg ">
-                        </div>
-                        <div class="cart-item-details flex-grow">
-                            <div class="text-white font-bold cart-product-name"> JM Coffee Cup </div>
-                            <div class="cart-product-make font-bold"> JMDevs </div>
-                        </div>
-                        <div class="cart-item-counter w-48 flex items-center">
-                            <div
-                                class="chevron-left cursor-pointer h-6 w-6 flex justfiy-center items-center  mr-2">
-                                <i class="fas fa-chevron-left "></i>
-                            </div>
-                            <h4 class="text-white qty ">x1</h4>
-                            <div
-                                class="chevron-right cursor-pointer h-6 w-6 flex justfiy-center items-center  ml-2">
-                                <i class="fas fa-chevron-right cursor-pointer"></i>
-                            </div>
-                        </div>
-                        <div class="item-total-cost w-48 font-bold text-white">
-                            15.00
-                        </div>
-                        <div class="item-card-delete w-10 font-bold cursor-pointer">
-                            <i class="fas fa-times cancel-item"></i>
-                        </div>
-                    </div>
+             
 
                     <div class="complete-order flex justify-end items-cente mt-10">
                         <div class="total-cost mr-20">
