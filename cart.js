@@ -29,7 +29,7 @@ function increaseCount(itemId){
     let cartItem = db.collection("cart-items").doc(itemId);
     cartItem.get().then(function(doc){
         if (doc.exists){
-            if(doc.data().qauntity <= 1){
+            if(doc.data().qauntity > 0){
                 cartItem.update({
                     qauntity: doc.data().qauntity +1
                 })
@@ -38,6 +38,9 @@ function increaseCount(itemId){
     })
 }
 
+function deleteItem(itemId){
+    db.collection("cart-items").doc(itemId).delete();
+}
 
 
 function generateCartItems(cartItems){
@@ -66,7 +69,7 @@ function generateCartItems(cartItems){
         <div class="item-total-cost w-48 font-bold text-white">
             ${item.price * item.qauntity}
         </div>
-        <div class="item-card-delete w-10 font-bold cursor-pointer">
+        <div data-id="${item.id}" class=" item-card-delete w-10 font-bold cursor-pointer">
             <i class="fas fa-times cancel-item"></i>
         </div>
     </div>  `
@@ -79,7 +82,9 @@ function generateCartItems(cartItems){
 function createEventListeners(){
     let decreaseButton = document.querySelectorAll(".cart-item-decrease");
     let increaseButton = document.querySelectorAll(".cart-item-increase");
+    let deleteButton = document.querySelectorAll(".item-card-delete");
 
+    
     decreaseButton.forEach((button) => { 
       button.addEventListener("click", function(){
         decreaseCount(button.dataset.id);
@@ -93,7 +98,12 @@ function createEventListeners(){
         })
       
       })
-
+    
+    deleteButton.forEach((button) =>{
+        button.addEventListener("click", function(){
+            deleteItem(button.dataset.id);
+        })
+    })
 }
 
 getCartItems();
