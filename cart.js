@@ -18,7 +18,7 @@ function getTotalCost(items){
     items.forEach((item) =>{
         totalCost += (item.price * item.qauntity);
     })
-    document.querySelector(".total-cost-number").innerText = totalCost;
+    document.querySelector(".total-cost-number").innerText = `$${totalCost}`;
 }
 
 function decreaseCount(itemId){
